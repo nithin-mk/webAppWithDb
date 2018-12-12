@@ -1,0 +1,25 @@
+<div id="header" >
+    <p id="Paste">
+        <button id="button2" ng-click="logout()">Log out</button>
+    </p>
+</div>
+<div id="body">
+    <div id="area">
+        <table>
+            <tr>
+                <th>Comment #</th>
+                <th>Body</th>
+                <th>Created By</th>
+                <th>Created At</th>
+                <th>Link</th>
+            </tr>
+            <tr ng-repeat="x in data">
+                <td ng-bind="x.id"></td>
+                <td ng-bind="x.body"></td>
+                <td ng-bind="x.user.login"></td>
+                <td ng-bind="x.created_at"></td>
+                <td ng-bind="x.html_url"></td>
+            </tr>
+        </table>
+    </div>
+</div>

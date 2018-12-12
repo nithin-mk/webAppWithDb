@@ -1,0 +1,28 @@
+<div id="header" >
+    <p id="Paste">
+        Paste URL:
+        <input id="Search" type="text" placeholder="Search" ng-model="url" >
+        <button id="button1" ng-click="myFunction()">OK</button>
+        <button id="button2" ng-click="logout()">Log out</button>
+    </p>
+</div>
+<div id="body">
+    <div id="area">
+        <table>
+            <tr>
+                <th>Issue #</th>
+                <th>Title</th>
+                <th>Created By</th>
+                <th>Created At</th>
+                <th>Link</th>
+            </tr>
+            <tr ng-repeat="x in data">
+                <td><a ui-sref="comments({owner: owner, repo: repo, number: x.number})" ng-bind="x.number"></a></td>
+                <td ng-bind="x.title"></td>
+                <td ng-bind="x.user.login"></td>
+                <td ng-bind="x.created_at"></td>
+                <td ng-bind="x.html_url"></td>
+            </tr>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+{
+  "name": "AngularJS Demo",
+  "version": "0.0.0",
+  "homepage": "https://github.com/nithiniq/angularjs-demo",
+  "authors": [
+    "Nithin Mathew Kurien",
+    "Saijal Shrivastava"
+  ],
+  "description": "a simple webapp with regular login",
+  "keywords": [
+    "satellizer",
+    "angularjs"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#~1.4.8",
+    "angular-ui-router": "~0.2.15",
+    "satellizer": "~0.13.1"
+  }
+}
