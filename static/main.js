@@ -28,6 +28,12 @@ app.config(function ($stateProvider, $urlRouterProvider) {
       templateUrl: 'partials/comments.tpl.html',
       controller: 'CommentsCtrl',
       data: {requiredLogin: true}
+    })
+    .state('chart', {
+      url: '/chart',
+      templateUrl: 'partials/chart.tpl.html',
+      controller: 'ChartCtrl',
+      data: {requiredLogin: true}
     });
 
   $urlRouterProvider.otherwise('/home');

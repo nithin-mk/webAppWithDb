@@ -7,17 +7,20 @@
         <script src="bower_components/angular/angular.min.js"></script>
         <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
         <script src="bower_components/satellizer/satellizer.min.js"></script>
+        <script src="bower_components/highcharts/highcharts.js"></script>
         <script src="main.js"></script>
         <script src="controllers/loginSignupCtrl.js"></script>
         <script src="controllers/secretCtrl.js"></script>
         <script src="controllers/issuesCtrl.js"></script>
         <script src="controllers/commentsCtrl.js"></script>
+        <script src="controllers/chartCtrl.js"></script>
 	</head>
 <body ng-app="DemoApp">
     <a ui-sref="home">Home</a>
     <a ui-sref="login">Login</a>
     <a ui-sref="secret">Secret</a>
     <a ui-sref="issues">Issues</a>
+    <a ui-sref="chart">Chart</a>
 
     <div ui-view></div>
 </body>
